@@ -395,6 +395,46 @@
   display: none;
 }
 
+.mission {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+}
+
+.mission h3 {
+  font-family: var(--TITLE-FONT);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.mission p {
+  font-family: var(--PRIMARY-FONT);
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.mission section {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.mission section article {
+  font-family: var(--PRIMARY-FONT);
+  background: var(--BG-COLOR1);
+  padding: 1rem;
+  line-height: 1.9;
+  font-size: 1.1rem;
+}
+
+.mission section article b {
+  font-family: var(--PRIMARY-FONT);
+}
+
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 1000px) {
@@ -492,6 +532,12 @@
   .responsive {
     display: block;
     width: 350px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .mission section {
+    flex-direction: column;
   }
 }
 
