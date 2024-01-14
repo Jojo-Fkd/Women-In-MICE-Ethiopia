@@ -1,0 +1,89 @@
+/* NAVIGATION */
+
+.logo img {
+  animation: imgAppear 1s ease;
+}
+
+@keyframes imgAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav-items li:not(.side-bar-icon-container).active::after {
+  animation: activeNav 1s ease;
+}
+
+@keyframes activeNav {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* MAIN CONTENT */
+
+.header .topic {
+  animation: topicAnimation 1s ease;
+}
+
+@keyframes topicAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header p {
+  animation: headerPAnimation 2s ease;
+}
+
+@keyframes headerPAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.values .caret_container:first-child {
+  animation: caretFirstAnimation 1s ease;
+}
+
+@keyframes caretFirstAnimation {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.values .caret_container:last-child {
+  animation: caretLastAnimation 1s ease;
+}
+
+@keyframes caretLastAnimation {
+  from {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,173 @@
+#contact {
+  background: var(--BG-COLOR2);
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem 0;
+}
+
+.contact-information {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.contact-information article {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-information article h3 {
+  font-family: var(--PRIMARY-FONT);
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: var(--PRIMARY-COLOR);
+}
+
+.contact-information article section {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-top: 1.5px solid var(--SECONDARY-COLOR);
+  border-bottom: 1.5px solid var(--SECONDARY-COLOR);
+  padding: 1rem;
+  width: 430px;
+}
+
+.contact-information article section figure {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contact-information article section figure figcaption {
+  font-family: var(--PRIMARY-FONT);
+}
+
+.direct-email {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.direct-email h3 {
+  font-family: var(--PRIMARY-FONT);
+  font-weight: 200;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--PRIMARY-COLOR);
+}
+
+.direct-email form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.direct-email form label {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.direct-email form label .input-label {
+  font-family: var(--PRIMARY-FONT);
+  color: VAR(--SECONDARY-COLOR);
+}
+
+.direct-email form label input {
+  height: 35px;
+  width: 300px;
+  background: #d3d3d3;
+  border: none;
+  padding-left: 0.5rem;
+  color: white;
+}
+
+.direct-email form label input:focus,
+.direct-email form label textarea:focus {
+  outline: 1.5px solid white;
+}
+
+.direct-email form label textarea {
+  background: #d3d3d3;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  font-family: var(--PRIMARY-FONT);
+}
+
+.direct-email form button {
+  border: none;
+  border-radius: 3px;
+  align-self: flex-start;
+  height: 35px;
+  width: 100px;
+  background: var(--SECONDARY-COLOR);
+  color: white;
+  font-family: var(--BTN-FONT);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 950px) {
+  .contact {
+    padding: 3rem 2rem;
+  }
+
+  .contact-information article section {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .contact {
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  .direct-email {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .contact-information article section {
+    width: 350px;
+    padding: 1rem;
+  }
+
+  .contact-information article section figure figcaption {
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .contact-information article section {
+    gap: 2rem;
+    width: 320px;
+  }
+
+  .contact-information article section figure {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-information article section figure svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+footer {
+  background: var(--BG-COLOR2);
+}
