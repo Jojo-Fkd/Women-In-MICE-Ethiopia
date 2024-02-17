@@ -167,11 +167,16 @@ body.covered {
   gap: 2.8rem;
 }
 
-.nav-items li:not(.side-bar-icon-container) {
+.nav-items li:not(.side-bar-icon-container) a:any-link {
+  padding: 0.8rem 0.5rem;
   position: relative;
+  font-family: var(--TITLE-FONT);
+  color: var(--PRIMARY-COLOR);
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
-.nav-items li:not(.side-bar-icon-container)::after {
+.nav-items li:not(.side-bar-icon-container) a:any-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -182,23 +187,12 @@ body.covered {
   transition: all 0.3s ease;
 }
 
-.nav-items li:not(.side-bar-icon-container).active::after {
+.nav-items li:not(.side-bar-icon-container).active a:any-link::after {
   width: 100%;
 }
 
-.nav-items li:not(.side-bar-icon-container):hover::after {
+.nav-items li:not(.side-bar-icon-container) a:any-link:hover::after {
   width: 100%;
-}
-
-.nav-items li:not(.side-bar-icon-container) {
-  padding: 0.8rem 0.5rem;
-}
-
-.nav-items li:not(.side-bar-icon-container) a:any-link {
-  font-family: var(--TITLE-FONT);
-  color: var(--PRIMARY-COLOR);
-  font-size: 0.9rem;
-  text-transform: uppercase;
 }
 
 .nav-items li.side-bar-icon-container {

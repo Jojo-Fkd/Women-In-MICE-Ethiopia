@@ -84,10 +84,9 @@
 .direct-email form label input {
   height: 35px;
   width: 300px;
-  background: #d3d3d3;
-  border: none;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   padding-left: 0.5rem;
-  color: white;
 }
 
 .direct-email form label input:focus,
@@ -96,13 +95,14 @@
 }
 
 .direct-email form label textarea {
-  background: #d3d3d3;
-  border: none;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 0.5rem;
-  color: white;
+
   line-height: 1.9;
   font-size: 1.05rem;
   font-family: var(--PRIMARY-FONT);
+  resize: none;
 }
 
 .direct-email form button {

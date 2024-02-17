@@ -50,3 +50,69 @@ main button:hover {
   background: #d4ab51;
   letter-spacing: 0.5px;
 }
+
+/* REPONSIVE DESIGN */
+
+@media screen and (max-width: 990px) {
+  main section {
+    padding-top: 6rem;
+  }
+
+  main h1 {
+    font-size: 4.2rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+
+  main button {
+    padding: 0.6rem 1.6rem;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  main h1 {
+    width: 600px;
+    line-height: 1.2;
+  }
+
+  main p {
+    width: 600px;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  main h1 {
+    width: 500px;
+    font-size: 3.5rem;
+  }
+
+  main p {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main h1 {
+    font-size: 3rem;
+    width: 400px;
+  }
+
+  main p {
+    width: 350px;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main h1 {
+    width: 320px;
+  }
+
+  main p {
+    width: 300px;
+  }
+}

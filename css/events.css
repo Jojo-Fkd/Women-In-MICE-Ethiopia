@@ -1,0 +1,25 @@
+main {
+  height: 100vh;
+  background: var(--BG-COLOR1);
+  display: grid;
+  place-content: center;
+}
+
+main h1 {
+  font-size: 3rem;
+  font-family: var(--TITLE-FONT);
+  font-weight: 100;
+  color: var(--SECONDARY-COLOR);
+}
+
+@media screen and (max-width: 700px) {
+  main h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main h1 {
+    font-size: 1.8rem;
+  }
+}
